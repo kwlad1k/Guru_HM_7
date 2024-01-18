@@ -3,10 +3,8 @@ package guru.qa;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-import static com.codeborne.selenide.Selenide.sleep;
 
-
-public class PracticeFormTestWithPageObjectsTests extends TestBase {
+public class PracticeFormWithPageObjectsTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
