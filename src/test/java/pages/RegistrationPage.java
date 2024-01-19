@@ -1,6 +1,5 @@
 package pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.Keys;
 import pages.components.DataPickerComponent;
@@ -111,26 +110,27 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setDateOfBirth(String day,String month,String year) {
+    public RegistrationPage setDateOfBirth(String day, String month, String year) {
         calenderInput.click();
-        dataPickerComponent.setDate(day,month,year);
+        dataPickerComponent.setDate(day, month, year);
 
         return this;
     }
+
     public RegistrationPage checkResultResponsive(String key, String valeu) {
         tableResponsive.shouldBe(visible);
-        modalResponviseComponent.checkResult(key,valeu);
+        modalResponviseComponent.checkResult(key, valeu);
 
         return this;
     }
 
     public RegistrationPage validationMatching(String key, String valeu) {
-        firstNameInput.shouldBe(cssValue(key,valeu));
-        lastNameInput.shouldBe(cssValue(key,valeu));
-        userNubmerInput.shouldBe(cssValue(key,valeu));
-        $("label[for='gender-radio-1']").shouldBe(cssValue(key,valeu));
-        $("label[for='gender-radio-2']").shouldBe(cssValue(key,valeu));
-        $("label[for='gender-radio-1']").shouldBe(cssValue(key,valeu));
+        firstNameInput.shouldBe(cssValue(key, valeu));
+        lastNameInput.shouldBe(cssValue(key, valeu));
+        userNubmerInput.shouldBe(cssValue(key, valeu));
+        $("label[for='gender-radio-1']").shouldBe(cssValue(key, valeu));
+        $("label[for='gender-radio-2']").shouldBe(cssValue(key, valeu));
+        $("label[for='gender-radio-1']").shouldBe(cssValue(key, valeu));
 
         return this;
     }
