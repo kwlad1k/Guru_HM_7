@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ModalResponviseComponent {
 
-    public void checkResult(String key, String valeu) {
-        $(".table-responsive").$(byText(key)).parent().shouldHave(text(valeu));
+    public void checkResult(String key, String value) {
+        $(".table-responsive").$(byText(key)).parent().shouldHave(text(value));
     }
 }

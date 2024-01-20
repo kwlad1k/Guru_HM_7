@@ -23,26 +23,26 @@ public class TextBoxPage {
         return this;
     }
 
-    public TextBoxPage setUserName(String valeu) {
-        userNameInput.setValue(valeu);
+    public TextBoxPage setUserName(String value) {
+        userNameInput.setValue(value);
 
         return this;
     }
 
-    public TextBoxPage setUserEmail(String valeu) {
-        userEmailInput.setValue(valeu);
+    public TextBoxPage setUserEmail(String value) {
+        userEmailInput.setValue(value);
 
         return this;
     }
 
-    public TextBoxPage setCurrentAddress(String valeu) {
-        currentAddressInput.setValue(valeu);
+    public TextBoxPage setCurrentAddress(String value) {
+        currentAddressInput.setValue(value);
 
         return this;
     }
 
-    public TextBoxPage setPermanentAddress(String valeu) {
-        permanentAddressInput.setValue(valeu);
+    public TextBoxPage setPermanentAddress(String value) {
+        permanentAddressInput.setValue(value);
 
         return this;
     }
@@ -51,8 +51,8 @@ public class TextBoxPage {
         submitButton.click();
     }
 
-    public TextBoxPage checkResult(String valeu) {
-        output.shouldBe(text(valeu));
+    public TextBoxPage checkResult(String value) {
+        output.shouldBe(text(value));
 
         return this;
     }

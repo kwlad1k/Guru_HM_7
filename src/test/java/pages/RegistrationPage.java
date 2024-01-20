@@ -86,8 +86,8 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setCurrentAddress(String valeu) {
-        currentAddressForm.setValue(valeu);
+    public RegistrationPage setCurrentAddress(String value) {
+        currentAddressForm.setValue(value);
 
         return this;
     }
@@ -117,20 +117,20 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage checkResultResponsive(String key, String valeu) {
+    public RegistrationPage checkResultResponsive(String key, String value) {
         tableResponsive.shouldBe(visible);
-        modalResponviseComponent.checkResult(key, valeu);
+        modalResponviseComponent.checkResult(key, value);
 
         return this;
     }
 
-    public RegistrationPage validationMatching(String key, String valeu) {
-        firstNameInput.shouldBe(cssValue(key, valeu));
-        lastNameInput.shouldBe(cssValue(key, valeu));
-        userNubmerInput.shouldBe(cssValue(key, valeu));
-        $("label[for='gender-radio-1']").shouldBe(cssValue(key, valeu));
-        $("label[for='gender-radio-2']").shouldBe(cssValue(key, valeu));
-        $("label[for='gender-radio-1']").shouldBe(cssValue(key, valeu));
+    public RegistrationPage validationMatching(String key, String value) {
+        firstNameInput.shouldBe(cssValue(key, value));
+        lastNameInput.shouldBe(cssValue(key, value));
+        userNubmerInput.shouldBe(cssValue(key, value));
+        $("label[for='gender-radio-1']").shouldBe(cssValue(key, value));
+        $("label[for='gender-radio-2']").shouldBe(cssValue(key, value));
+        $("label[for='gender-radio-1']").shouldBe(cssValue(key, value));
 
         return this;
     }
