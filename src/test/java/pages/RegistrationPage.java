@@ -3,7 +3,7 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.Keys;
 import pages.components.DataPickerComponent;
-import pages.components.ModalResponviseComponent;
+import pages.components.ModalResponsiveComponent;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
@@ -28,7 +28,7 @@ public class RegistrationPage {
             tableResponsive = $(".table-responsive");
 
     DataPickerComponent dataPickerComponent = new DataPickerComponent();
-    ModalResponviseComponent modalResponviseComponent = new ModalResponviseComponent();
+    ModalResponsiveComponent modalResponsiveComponent = new ModalResponsiveComponent();
 
     public RegistrationPage openPage() {
         open("/automation-practice-form");
@@ -62,7 +62,7 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setPhoneNubmer(String value) {
+    public RegistrationPage setPhoneNumber(String value) {
         userNubmerInput.setValue(value);
 
         return this;
@@ -119,7 +119,7 @@ public class RegistrationPage {
 
     public RegistrationPage checkResultResponsive(String key, String value) {
         tableResponsive.shouldBe(visible);
-        modalResponviseComponent.checkResult(key, value);
+        modalResponsiveComponent.checkResult(key, value);
 
         return this;
     }

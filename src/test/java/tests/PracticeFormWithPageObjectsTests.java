@@ -3,7 +3,6 @@ package tests;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-
 public class PracticeFormWithPageObjectsTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
@@ -15,7 +14,7 @@ public class PracticeFormWithPageObjectsTests extends TestBase {
                 .setLastName("Milligan")
                 .setUserEmail("billymilly@gogle.com")
                 .setGender("Other")
-                .setPhoneNubmer("9999999999")
+                .setPhoneNumber("9999999999")
                 .setDateOfBirth("15", "July", "1993")
                 .setUserSubjects("Com")
                 .setUserHobbies("Sports")
@@ -42,7 +41,7 @@ public class PracticeFormWithPageObjectsTests extends TestBase {
                 .setFirstName("Billy")
                 .setLastName("Milligan")
                 .setGender("Other")
-                .setPhoneNubmer("9999999999")
+                .setPhoneNumber("9999999999")
                 .clickSubmitButton();
 
         registrationPage.checkResultResponsive("Student Name", "Billy Milligan")
